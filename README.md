@@ -1,2 +1,2 @@
-# Itachi Sign-up
+# ItachiSignup
 Sign UP Page !!
