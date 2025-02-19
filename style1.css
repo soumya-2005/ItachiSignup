@@ -1,0 +1,45 @@
+body {
+    background-color: rgba(0, 0, 0, 0.934);
+    color: rgba(222, 214, 214, 0.764);
+    margin: 0;
+    padding: 0;
+
+}
+
+main {
+    border: 1px solid red;
+    padding: 25px;
+    margin: 25px;
+    width: 700px;
+    height: 500px;
+    /* box-sizing: border-box; */
+
+    font-family: "Noto Sans JP", serif;
+
+}
+
+h1 {
+    color: rgba(157, 17, 17, 0.868);
+    text-align: center;
+    letter-spacing: 20px;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* for all the box button */
+.box {
+    background-color: black;
+    color: rgba(222, 214, 214, 0.764);
+}
+
+/* for radio and checkbox button */
+.radio {
+    accent-color: black;
+}
+
+.option {
+    background-color: whitesmoke;
+    color: black;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP PAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<!-- basic sign up page -->
+
+<header>
+    <h1>Sign Up</h1>
+</header>
+
+<main>
+    <!-- 1st div -username -->
+    <!-- 2nd div -email -->
+    <!-- 3rd div -password -->
+    <!-- 4th div -Gender(radio) -->
+    <!-- 5th div -Newsletter(checkbox) -->
+    <!-- 6th div -premium(select) -->
+    <!-- 7th div -submit and reset -->
+
+    <!-- text==writing -->
+    <!-- button==no writing -->
+
+
+    <form action="/Submit.php" method="post">
+
+        <!-- usernam adn email and password section -->
+        <div>
+            <!-- username, email,password  text class--[(textgeneral, imp) and their respective name] -->
+            <!-- username, email, password  button class--[box(common) ][box1,box2,box3] -->
+
+            <label for="username" class="textgeneral imp username">Username:</label>
+            <input type="text" id="username" class="box box1" name="username" required placeholder="username">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email" class="textgeneral imp email"> Email:</label>
+            <input type="email" id="email" class="box box2" name="email" placeholder="Email">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password" class="textgeneral imp password">Password:</label>
+            <input type="password" id="password" class="box box3" name="password" required placeholder="Password">
+        </div>
+
+        <br>
+
+        <!-- Gender and newsletter section -->
+
+        <div>
+            <!-- male and female text class--[textgeneral, respective name] -->
+            <!-- male and female radio button class--[radio(common)][radio1, radio2] -->
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="male" class="radio radio1">
+            <label for="male" class="textgeneral male">Male</label>
+            <input type="radio" name="gender" id="female" class="radio radio2" value="female">
+            <label for="female" class="textgeneral female">Female </label>
+
+        </div>
+
+        <br>
+
+        <div>
+            <!-- subscribe for the newsletter text class--[textgeneral(common), subs] -->
+            <!-- checkbox button class--[radio(common), checkbox] -->
+
+            <input type="checkbox" id="subs" value="yes" class="radio checkbox">
+            <label for="subs" class="textgeneral subs">subscribe for newslatter</label>
+
+        </div>
+
+        <br><br>
+
+        <!-- forcing them to by premium but free is goat -->
+
+        <div>
+            <!-- Preference text class--[textgeneral, preference] -->
+            <!-- select button class--[box(common), smallbox] -->
+            <!-- {special} option class--[option(common)] [option1,option2] -->
+            <select name="select" id="select" class="box smallbox">
+                <option value="Normal" class="option option1">Normal</option>
+                <option value="premium" class="option option2">Premium</option>
+            </select>
+            <label for="select" class="textgeneral preference">Preference</label>
+
+        </div>
+
+        <br><br>
+
+        <!-- feedback and submit and reset button -->
+
+        <div>
+            <!-- feedback text classs--[textgeneral(common),feedback]  -->
+            <!-- textarea button class--[box(common), bigbox] -->
+            <label for="textarea" class="textgeneral feedback">Feedback</label> <br>
+            <textarea name="textarea" id="textarea" class="box bigbox" placeholder="Send your Feedback" cols="20"
+                rows="5"></textarea>
+
+        </div>
+
+        <br> <br>
+
+        <div>
+            <!-- submit and reset button class--[box(common),last button] -->
+            <input type="reset" id="reset" class="box lastbutton" value="reset">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" id="submit" class="box lastbutton" value="submit"> 
+
+        </div>
+
+    </form>
+
+    <br><br>
+
+</main>
+
+<footer>
+    &copy;
+</footer>
+
+</body>
+
+</html>
